@@ -14,7 +14,7 @@ const age = prompt("Podaj swój wiek ");
 if(age >= 18){
     
     div.textContent = `Masz na imię ${name} ${surname}`;
-    console.log(div);
+    console.log(div.textContent);
 } else {
     div.textContent = `Jesteś niepełnoletni`
 }
