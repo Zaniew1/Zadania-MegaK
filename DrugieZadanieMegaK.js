@@ -3,18 +3,19 @@ const secondLetter = prompt('Podaj drugą liczbę')
 const operation = prompt('Podaj operację do wykonania : (+) (-)  (/) (*)')
 
 
+
 if(operation === '+'){
     console.log(Number(firstLetter) + Number(secondLetter));
 }
-if(operation === '-'){
+else if(operation === '-'){
     console.log(Number(firstLetter) - Number(secondLetter));
 
 }
-if(operation === '/'){
+else if(operation === '/'){
     console.log(Number(firstLetter) / Number(secondLetter));
 
 }
-if(operation === '*'){
+else if(operation === '*'){
     console.log(Number(firstLetter) * Number(secondLetter));
 
-}
+} else {console.log('Użyłeś złego operatora')}
