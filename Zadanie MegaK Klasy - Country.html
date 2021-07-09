@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    class Country
+    {
+        constructor(currentPlaceAtOlympics)
+        {
+            this.currentPlaceAtOlympics = [];
+        
+        }
+
+        addPlace(currentPlace)
+        {
+            if(typeof currentPlace !== "number"){
+                console.log("Use only numbers")
+                return 
+            }
+            this.currentPlaceAtOlympics.push(currentPlace);
+        }
+
+        checkGoldMedal()
+        {
+
+            for(let i = 0; i< this.currentPlaceAtOlympics.length; i++) {
+                if(this.currentPlaceAtOlympics[i] === 1){
+                    console.log("You are a winner");
+                    return 
+                }
+            }
+
+        }
+
+
+    }
+
+
+    const poland = new Country();
+    poland.addPlace(1)
+    poland.addPlace(2)
+    poland.addPlace(1)
+    poland.addPlace(3)
+    poland.addPlace(2)
+    poland.addPlace(1)
+    poland.checkGoldMedal();
+    console.log(poland) 
+
+    </script>
+</body>
+</html>
